@@ -69,7 +69,7 @@ router.get('/shopping-cart', function(req, res, next) {
         //var list = db.db('shopping').collection('carts').find({user: req.user.email},{product: 1, _id: 0})
         //var addedProducts = db.db('shopping').collection('products').find({_id: {$in: list}})
         //var list = {title: 'xyz', description: 'budhfrkmk', price: 34}
-        console.log(list);
+//         console.log(list);
     res.render('shop/shopping-cart', {products: cart.generateArray(), totalPrice: cart.totalPrice});
     });
 });
